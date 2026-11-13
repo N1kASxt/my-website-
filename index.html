@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мої улюблені книги</title>
+    
+    <!-- 5. Підключення шрифтів Google Fonts (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- 6. Підключення зовнішнього файлу стилів -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Мої улюблені книги</h1>
+
+    <h2>Чому я люблю читати</h2>
+    <p>Читання книг приносить мені велике задоволення. Це дає можливість зануритися в <i>нові світи</i>, дізнатися багато цікавого та <u>розвивати</u> свою <u>уяву</u>.</p>
+
+    <h2>Мої улюблені книги</h2>
+    <ol>
+        <li>Володар перснів - Дж. Р. Р. Толкін</li>
+        <li>Гаррі Поттер і філософський камінь - Дж. К. Ролінґ</li>
+        <li>1984 - Джордж Орвелл</li>
+    </ol>
+
+    <h2>Жанри, які я люблю</h2>
+    <ul>
+        <li>Фентезі</li>
+        <li>Наукова фантастика</li>
+        <li>Детективи</li>
+    </ul>
+
+    <h2>Обкладинки книг</h2>
+    <div>
+        <img src="https://static.yakaboo.ua/media/catalog/product/i/m/img_70506_1.jpg" alt="Володар перснів" width="200" height="300">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZE9Y3uE-IaUw_9SGLnt6kfSbW8G4I-PgfSwUzLatcw&s" alt="Гаррі Поттер" width="200" height="300">
+        <img src="https://static.yakaboo.ua/media/catalog/product/2/6/26_1_329.jpg" alt="1984" width="200" height="300">
+    </div>
+
+    <h2>Де купити ці книги</h2>
+    <p>Книги можна придбати в книгарнях або онлайн-магазинах, наприклад на <a href="https://www.amazon.com/" target="_blank">Amazon</a>.</p>
+
+    <!-- 3. Додавання мультимедіа (Відео) -->
+    <h2>Відео про книгу</h2>
+    <video controls width="500" height="300">
+        <source src="book_trailer.mp4" type="video/mp4">
+        Ваш браузер не підтримує відтворення відео.
+    </video>
+
+    <!-- 4. Додавання форми -->
+    <h2>Зворотній зв'язок</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" min="0" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Відправити</button>
+    </form>
+
+    <h2>Інформація про книги</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Назва книги</th>
+                <th>Автор</th>
+                <th>Жанр</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Володар перснів</td>
+                <td>Дж. Р. Р. Толкін</td>
+                <td>Фентезі</td>
+            </tr>
+            <tr>
+                <td>Гаррі Поттер і філософський камінь</td>
+                <td>Дж. К. Ролінґ</td>
+                <td>Фентезі</td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Джордж Орвелл</td>
+                <td>Наукова фантастика</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
